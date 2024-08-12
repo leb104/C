@@ -1,0 +1,131 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+void order();
+void orderplacement();
+
+int main() {
+
+
+	int choice;
+
+	
+	
+	do {
+		cout << "1.Order Menu" << endl;
+		cout << "2.Report" << endl;
+		cout << "3.Exit" << endl;
+		cout << "Choice: ";
+		cin >> choice;
+		cout << endl;
+
+	} while (choice < 1 || choice > 3);
+
+
+	if (choice == 1) {
+		cout << "You selected Order Menu," << endl;
+		orderplacement();
+	}
+	else if (choice == 2) {
+		cout << "You selected Report." << endl;
+	}
+	else if (choice == 3) {
+		cout << "Exiting program..." << endl;
+	}
+
+
+
+
+
+
+
+	return 0;
+}
+
+void orderplacement() {
+	char customer;
+
+	cout << "+==============================+============+============+============+============+============+=================+\n";
+	cout << "|          Item(No.)           | Star 1(RM) | Star 2(RM) | Star 3(RM) | Star 4(RM) | Star 5(RM) | Warranty(Years) |\n";
+	cout << "+==============================+============+============+============+============+============+=================+\n";
+	cout << "| 1.Laptop                     |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
+	cout << "| 2.Phone                      |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
+	cout << "| 3.Ipad                       |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
+	cout << "| 4.Tablet                     |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
+	cout << "| 5.Power Bank                 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
+	cout << "| 6.Air Conditioner            |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
+
+
+	do {
+		order();
+		cout << "Order:";
+
+
+		cout << "Anymore orders?(Y/N) :";
+		cin >> customer;
+
+
+	} while (customer == 'y' || customer == 'Y');
+
+
+	cout << "Order complete.";
+
+
+}
+
+void order() {
+
+	int c = 1;
+	int order;
+	int starL{};
+
+
+
+	cout << "Customer " << c++ << "                                                     16 July 2024" << endl;
+	cout << "Order: ";
+	cin >> order;
+	if (order == 1) {
+		cout << "Laptop" << endl;
+
+		do {
+			cout << "Star:";
+			cin >> starL;
+
+			switch (starL) {
+			case 1:
+				cout << "Price :RM1500.00" << endl;
+				break;
+			case 2:
+				cout << "Price :RM2000.00" << endl;
+				break;
+			case 3:
+				cout << "Price :RM2000.00" << endl;
+				break;
+			case 4:
+				cout << "Price :RM2000.00" << endl;
+				break;
+			case 5:
+				cout << "Price :RM2000.00" << endl;
+				break;
+			default:cout << "No star value detected. Try again." << endl;
+				break;
+			}
+		} while (starL < 1 || starL >5);
+
+
+	}
+
+
+
+
+
+
+}
