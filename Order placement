@@ -78,7 +78,7 @@ void order() {
 	int starp{};
 	int staripad{};
 	char customer;
-
+ 
 	do {
 	cout << "Customer " << c << "                                                     16 July 2024" << endl << endl;
 	cout << "Order: ";
@@ -222,7 +222,7 @@ void order() {
 
 
 
-	
+	c++;
 
 
 }
