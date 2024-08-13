@@ -8,11 +8,53 @@ void orderplacement();
 
 
 int customernumber = 1;
+int laptop = 0;
+int laptop2 = 0;
+int laptop3 = 0;
+int laptop4 = 0;
+int laptop5 = 0;
+int phone = 0;
+int phone2 = 0;
+int phone3 = 0;
+int phone4 = 0;
+int phone5 = 0;
+int ipad = 0;
+int ipad2 = 0;
+int ipad3 = 0;
+int ipad4 = 0;
+int ipad5 = 0;
+int tablet = 0;
+int tablet2 = 0;
+int tablet3 = 0;
+int tablet4 = 0;
+int tablet5 = 0;
+int powerb = 0;
+int powerb2 = 0;
+int powerb3 = 0;
+int powerb4 = 0;
+int powerb5 = 0;
+int ac = 0;
+int ac2 = 0;
+int ac3 = 0;
+int ac4 = 0;
+int ac5 = 0;
+int star = 1;
+int star2 = 2;
+int star3 = 3;
+int star4 = 4;
+int star5 = 5;
+int starl{};
+int starp{};
+int staripad{};
+
+
+char customer;
+char answer;
+char morecust;
 
 int main() {
 
-	char answer;
-	char morecust;
+
 	orderplacement();
 
 
@@ -48,9 +90,9 @@ void orderplacement() {
 	cout << "+==============================+============+============+============+============+============+=================+\n";
 	cout << "| 1.Laptop                     |   1522.00  |   2200.00  |   2530.00  |   3130.00  |   3570.00  |        3        |\n";
 	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
-	cout << "| 2.Phone                      |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "| 2.Phone                      |   1260.00  |   1520.00  |   1830.00  |   2070.00  |   2360.00  |        2        |\n";
 	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
-	cout << "| 3.Ipad                       |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
+	cout << "| 3.Ipad                       |   1500.00  |   2199.99  |   2500.00  |   2749.99  |   3099.99 |        2        |\n";
 	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
 	cout << "| 4.Tablet                     |   10000.00 |   10000.00 |   10000.00 |   10000.00 |   10000.00 |        2        |\n";
 	cout << "+------------------------------+------------+------------+------------+------------+------------+-----------------+\n";
@@ -63,57 +105,12 @@ void orderplacement() {
 
 
 
-
-
-
-
 }
 
 void order() {
 
-	int c = 1;
+
 	int order;
-	int laptop = 0;
-	int laptop2 = 0;
-	int laptop3 = 0;
-	int laptop4 = 0;
-	int laptop5 = 0;
-	int phone = 0;
-	int phone2 = 0;
-	int phone3 = 0;
-	int phone4 = 0;
-	int phone5 = 0;
-	int ipad = 0;
-	int ipad2 = 0;
-	int ipad3 = 0;
-	int ipad4 = 0;
-	int ipad5 = 0;
-	int tablet = 0;
-	int tablet2 = 0;
-	int tablet3 = 0;
-	int tablet4 = 0;
-	int tablet5 = 0;
-	int powerb = 0;
-	int powerb2 = 0;
-	int powerb3 = 0;
-	int powerb4 = 0;
-	int powerb5 = 0;
-	int ac = 0;
-	int ac2 = 0;
-	int ac3 = 0;
-	int ac4 = 0;
-	int ac5 = 0;
-	int star = 1;
-	int star2 = 2;
-	int star3 = 3;
-	int star4 = 4;
-	int star5 = 5;
-
-	int starl{};
-	int starp{};
-	int staripad{};
-	char customer;
-
 
 
 
