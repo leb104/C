@@ -8,36 +8,6 @@ void orderplacement();
 
 
 int customernumber = 1;
-int laptop = 0;
-int laptop2 = 0;
-int laptop3 = 0;
-int laptop4 = 0;
-int laptop5 = 0;
-int phone = 0;
-int phone2 = 0;
-int phone3 = 0;
-int phone4 = 0;
-int phone5 = 0;
-int ipad = 0;
-int ipad2 = 0;
-int ipad3 = 0;
-int ipad4 = 0;
-int ipad5 = 0;
-int tablet = 0;
-int tablet2 = 0;
-int tablet3 = 0;
-int tablet4 = 0;
-int tablet5 = 0;
-int powerb = 0;
-int powerb2 = 0;
-int powerb3 = 0;
-int powerb4 = 0;
-int powerb5 = 0;
-int ac = 0;
-int ac2 = 0;
-int ac3 = 0;
-int ac4 = 0;
-int ac5 = 0;
 int star = 1;
 int star2 = 2;
 int star3 = 3;
@@ -121,7 +91,36 @@ void order() {
 
 
 	int order;
-	
+	int laptop = 0;
+	int laptop2 = 0;
+	int laptop3 = 0;
+	int laptop4 = 0;
+	int laptop5 = 0;
+	int phone = 0;
+	int phone2 = 0;
+	int phone3 = 0;
+	int phone4 = 0;
+	int phone5 = 0;
+	int ipad = 0;
+	int ipad2 = 0;
+	int ipad3 = 0;
+	int ipad4 = 0;
+	int ipad5 = 0;
+	int tablet = 0;
+	int tablet2 = 0;
+	int tablet3 = 0;
+	int tablet4 = 0;
+	int tablet5 = 0;
+	int powerb = 0;
+	int powerb2 = 0;
+	int powerb3 = 0;
+	int powerb4 = 0;
+	int powerb5 = 0;
+	int ac = 0;
+	int ac2 = 0;
+	int ac3 = 0;
+	int ac4 = 0;
+	int ac5 = 0;
 
 
 
