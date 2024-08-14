@@ -42,7 +42,7 @@ int main() {
 
 		} while (answer == 'n' || answer == 'N');
 		customernumber++;
-		
+
 		cout << "Anymore customer? (Y/N) :";
 		cin >> morecust;
 	} while (morecust == 'y' || morecust == 'Y');
@@ -124,357 +124,357 @@ void order() {
 
 
 
-	
+
+	do {
 		do {
+			cout << "Customer " << customernumber << "                                                     16 july 2024" << endl << endl;
+			cout << "Order(Number of item): ";
+			cin >> order;
+			if (order < 1 || order >6)
+				cout << "We do not have a item for that number. Please enter a valid number." << endl << endl;
+		} while (order < 1 || order >6);
+
+		if (order == 1) {
+			cout << "Order Laptop" << endl;
 			do {
-				cout << "Customer " << customernumber  << "                                                     16 july 2024" << endl << endl;
-				cout << "Order: ";
-				cin >> order;
-				if (order < 1 || order >6)
-					cout << "We do not have a item for that number. Please enter a valid number." << endl << endl;
-			} while (order < 1 || order >6);
+				cout << "Star:";
+				cin >> starl;
 
-			if (order == 1) {
-				cout << "Order Laptop" << endl;
-				do {
-					cout << "Star:";
-					cin >> starl;
-
-					switch (starl) {
-					case 1:
-						cout << "Price :RM1522.00" << endl;
-						laptop++;
-						break;
-					case 2:
-						cout << "Price :RM2200.00" << endl;
-						laptop2++;
-						break;
-					case 3:
-						cout << "Price :RM2530.00" << endl;
-						laptop3++;
-						break;
-					case 4:
-						cout << "Price :RM3130.00" << endl;
-						laptop4++;
-						break;
-					case 5:
-						cout << "Price :RM3570.00" << endl;
-						laptop5++;
-						break;
-					default:cout << "No star value detected. Try again." << endl << endl;
-						break;
-					}
-				} while (starl < 1 || starl >5);
-
-
-			}
-			else if (order == 2) {
-				cout << "Order Phone" << endl;
-				do {
-					cout << "Star:";
-					cin >> starp;
-
-					switch (starp) {
-					case 1:
-						cout << "Price :RM1260.00" << endl;
-						phone++;
-						break;
-					case 2:
-						cout << "Price :RM1520.00" << endl;
-						phone2++;
-						break;
-					case 3:
-						cout << "Price :RM1830.00" << endl;
-						phone3++;
-						break;
-					case 4:
-						cout << "Price :RM2070.00" << endl;
-						phone4++;
-						break;
-					case 5:
-						cout << "Price :RM2360.00" << endl;
-						phone5++;
-						break;
-					default:cout << "No star value detected. Try again." << endl << endl;
-						break;
-					}
-				} while (starp < 1 || starp >5);
-			}
-			else if (order == 3) {
-				cout << "Order Ipad" << endl;
-				do {
-					cout << "Star:";
-					cin >> staripad;
-
-					switch (staripad) {
-					case 1:
-						cout << "Price :RM1500.00" << endl;
-						ipad++;
-						break;
-					case 2:
-						cout << "Price :RM2199.99" << endl;
-						ipad2++;
-						break;
-					case 3:
-						cout << "Price :RM2500.00" << endl;
-						ipad3++;
-						break;
-					case 4:
-						cout << "Price :RM2749.99" << endl;
-						ipad4++;
-						break;
-					case 5:
-						cout << "Price :RM3099.99" << endl;
-						ipad5++;
-						break;
-					default:cout << "No star value detected. Try again." << endl << endl;
-						break;
-					}
-				} while (staripad < 1 || staripad >5);
-
-
-			}
-			else if (order == 4) {
-				cout << "Order Tablet" << endl;
-				do {
-					cout << "Star:";
-					cin >> startablet;
-
-					switch (startablet) {
-					case 1:
-						cout << "Price :RM1500.00" << endl;
-						tablet++;
-						break;
-					case 2:
-						cout << "Price :RM2199.99" << endl;
-						tablet2++;
-						break;
-					case 3:
-						cout << "Price :RM2500.00" << endl;
-						tablet3++;
-						break;
-					case 4:
-						cout << "Price :RM2749.99" << endl;
-						tablet4++;
-						break;
-					case 5:
-						cout << "Price :RM3099.99" << endl;
-						tablet5++;
-						break;
-					default:cout << "No star value detected. Try again." << endl << endl;
-						break;
-					}
-				} while (startablet < 1 || startablet >5);
-
-
-			}
-			else if (order == 5) {
-				cout << "Order Ipad" << endl;
-				do {
-					cout << "Star:";
-					cin >> staripad;
-
-					switch (staripad) {
-					case 1:
-						cout << "Price :RM1500.00" << endl;
-						ipad++;
-						break;
-					case 2:
-						cout << "Price :RM2199.99" << endl;
-						ipad2++;
-						break;
-					case 3:
-						cout << "Price :RM2500.00" << endl;
-						ipad3++;
-						break;
-					case 4:
-						cout << "Price :RM2749.99" << endl;
-						ipad4++;
-						break;
-					case 5:
-						cout << "Price :RM3099.99" << endl;
-						ipad5++;
-						break;
-					default:cout << "No star value detected. Try again." << endl << endl;
-						break;
-					}
-				} while (staripad < 1 || staripad >5);
-
-
+				switch (starl) {
+				case 1:
+					cout << "Price :RM1522.00" << endl;
+					laptop++;
+					break;
+				case 2:
+					cout << "Price :RM2200.00" << endl;
+					laptop2++;
+					break;
+				case 3:
+					cout << "Price :RM2530.00" << endl;
+					laptop3++;
+					break;
+				case 4:
+					cout << "Price :RM3130.00" << endl;
+					laptop4++;
+					break;
+				case 5:
+					cout << "Price :RM3570.00" << endl;
+					laptop5++;
+					break;
+				default:cout << "No star value detected. Try again." << endl << endl;
+					break;
 				}
-			else if (order == 6) {
-				cout << "Order Ipad" << endl;
-				do {
-					cout << "Star:";
-					cin >> staripad;
-
-					switch (staripad) {
-					case 1:
-						cout << "Price :RM1500.00" << endl;
-						ipad++;
-						break;
-					case 2:
-						cout << "Price :RM2199.99" << endl;
-						ipad2++;
-						break;
-					case 3:
-						cout << "Price :RM2500.00" << endl;
-						ipad3++;
-						break;
-					case 4:
-						cout << "Price :RM2749.99" << endl;
-						ipad4++;
-						break;
-					case 5:
-						cout << "Price :RM3099.99" << endl;
-						ipad5++;
-						break;
-					default:cout << "No star value detected. Try again." << endl << endl;
-						break;
-					}
-				} while (staripad < 1 || staripad >5);
+			} while (starl < 1 || starl >5);
 
 
+		}
+		else if (order == 2) {
+			cout << "Order Phone" << endl;
+			do {
+				cout << "Star:";
+				cin >> starp;
+
+				switch (starp) {
+				case 1:
+					cout << "Price :RM1260.00" << endl;
+					phone++;
+					break;
+				case 2:
+					cout << "Price :RM1520.00" << endl;
+					phone2++;
+					break;
+				case 3:
+					cout << "Price :RM1830.00" << endl;
+					phone3++;
+					break;
+				case 4:
+					cout << "Price :RM2070.00" << endl;
+					phone4++;
+					break;
+				case 5:
+					cout << "Price :RM2360.00" << endl;
+					phone5++;
+					break;
+				default:cout << "No star value detected. Try again." << endl << endl;
+					break;
 				}
+			} while (starp < 1 || starp >5);
+		}
+		else if (order == 3) {
+			cout << "Order Ipad" << endl;
+			do {
+				cout << "Star:";
+				cin >> staripad;
 
-			cout << "Anymore Orders?(Y/N) :";
-			cin >> customer;
-			cout << " " << endl;
-		} while (customer == 'y' || customer == 'Y');
+				switch (staripad) {
+				case 1:
+					cout << "Price :RM1500.00" << endl;
+					ipad++;
+					break;
+				case 2:
+					cout << "Price :RM2199.99" << endl;
+					ipad2++;
+					break;
+				case 3:
+					cout << "Price :RM2500.00" << endl;
+					ipad3++;
+					break;
+				case 4:
+					cout << "Price :RM2749.99" << endl;
+					ipad4++;
+					break;
+				case 5:
+					cout << "Price :RM3099.99" << endl;
+					ipad5++;
+					break;
+				default:cout << "No star value detected. Try again." << endl << endl;
+					break;
+				}
+			} while (staripad < 1 || staripad >5);
 
-
-		cout << "order complete." << endl;
-
-		if (laptop >= 1) {
-
-			cout << "You have bought " << laptop << " amount of 1 star laptop." << endl;
 
 		}
-		if (laptop2 >= 1) {
+		else if (order == 4) {
+			cout << "Order Tablet" << endl;
+			do {
+				cout << "Star:";
+				cin >> startablet;
 
-			cout << "You have bought " << laptop2 << " amount of 2 star laptop." << endl;
-		}
-		if (laptop3 >= 1) {
+				switch (startablet) {
+				case 1:
+					cout << "Price :RM1500.00" << endl;
+					tablet++;
+					break;
+				case 2:
+					cout << "Price :RM2199.99" << endl;
+					tablet2++;
+					break;
+				case 3:
+					cout << "Price :RM2500.00" << endl;
+					tablet3++;
+					break;
+				case 4:
+					cout << "Price :RM2749.99" << endl;
+					tablet4++;
+					break;
+				case 5:
+					cout << "Price :RM3099.99" << endl;
+					tablet5++;
+					break;
+				default:cout << "No star value detected. Try again." << endl << endl;
+					break;
+				}
+			} while (startablet < 1 || startablet >5);
 
-			cout << "You have bought " << laptop3 << " amount of 3 star laptop." << endl;
-		}
-		if (laptop4 >= 1) {
-
-			cout << "You have bought " << laptop4 << " amount of 4 star laptop." << endl;
-		}
-		if (laptop5 >= 1) {
-
-			cout << "You have bought " << laptop5 << " amount of 5 star laptop." << endl;
-		}
-		if (phone >= 1) {
-
-			cout << "You have bought " << phone << " amount of 1 star phone." << endl;
-
-		}
-		if (phone2 >= 1) {
-
-			cout << "You have bought " << phone2 << " amount of 2 star phone." << endl;
-		}
-		if (phone3 >= 1) {
-
-			cout << "You have bought " << phone3 << " amount of 3 star phone." << endl;
-		}
-		if (phone4 >= 1) {
-
-			cout << "You have bought " << phone4 << " amount of 4 star phone." << endl;
-		}
-		if (phone5 >= 1) {
-
-			cout << "You have bought " << phone5 << " amount of 5 star phone." << endl;
-		}
-
-		if (ipad >= 1) {
-
-			cout << "You have bought " << ipad << " amount of 1 star ipad." << endl;
 
 		}
-		if (ipad2 >= 1) {
+		else if (order == 5) {
+			cout << "Order Ipad" << endl;
+			do {
+				cout << "Star:";
+				cin >> staripad;
 
-			cout << "You have bought " << ipad2 << " amount of 2 star ipad." << endl;
-		}
-		if (ipad3 >= 1) {
+				switch (staripad) {
+				case 1:
+					cout << "Price :RM1500.00" << endl;
+					ipad++;
+					break;
+				case 2:
+					cout << "Price :RM2199.99" << endl;
+					ipad2++;
+					break;
+				case 3:
+					cout << "Price :RM2500.00" << endl;
+					ipad3++;
+					break;
+				case 4:
+					cout << "Price :RM2749.99" << endl;
+					ipad4++;
+					break;
+				case 5:
+					cout << "Price :RM3099.99" << endl;
+					ipad5++;
+					break;
+				default:cout << "No star value detected. Try again." << endl << endl;
+					break;
+				}
+			} while (staripad < 1 || staripad >5);
 
-			cout << "You have bought " << ipad3 << " amount of 3 star ipad." << endl;
-		}
-		if (ipad4 >= 1) {
-
-			cout << "You have bought " << ipad4 << " amount of 4 star ipad." << endl;
-		}
-		if (ipad5 >= 1) {
-
-			cout << "You have bought " << ipad5 << " amount of 5 star ipad." << endl;
-		}
-
-		if (tablet >= 1) {
-
-			cout << "You have bought " << tablet << " amount of 1 star tablet." << endl;
-
-		}
-		if (tablet2 >= 1) {
-
-			cout << "You have bought " << tablet2 << " amount of 2 star tablet." << endl;
-		}
-		if (tablet3 >= 1) {
-
-			cout << "You have bought " << tablet3 << " amount of 3 star tablet." << endl;
-		}
-		if (tablet4 >= 1) {
-
-			cout << "You have bought " << tablet4 << " amount of 4 star tablet." << endl;
-		}
-		if (tablet5 >= 1) {
-
-			cout << "You have bought " << tablet5 << " amount of 5 star tablet." << endl;
-		}
-		if (powerb >= 1) {
-
-			cout << "You have bought " << powerb << " amount of 1 star powerb." << endl;
 
 		}
-		if (powerb2 >= 1) {
+		else if (order == 6) {
+			cout << "Order Ipad" << endl;
+			do {
+				cout << "Star:";
+				cin >> staripad;
 
-			cout << "You have bought " << powerb2 << " amount of 2 star powerb." << endl;
-		}
-		if (powerb3 >= 1) {
+				switch (staripad) {
+				case 1:
+					cout << "Price :RM1500.00" << endl;
+					ipad++;
+					break;
+				case 2:
+					cout << "Price :RM2199.99" << endl;
+					ipad2++;
+					break;
+				case 3:
+					cout << "Price :RM2500.00" << endl;
+					ipad3++;
+					break;
+				case 4:
+					cout << "Price :RM2749.99" << endl;
+					ipad4++;
+					break;
+				case 5:
+					cout << "Price :RM3099.99" << endl;
+					ipad5++;
+					break;
+				default:cout << "No star value detected. Try again." << endl << endl;
+					break;
+				}
+			} while (staripad < 1 || staripad >5);
 
-			cout << "You have bought " << powerb3 << " amount of 3 star powerb." << endl;
-		}
-		if (powerb4 >= 1) {
-			cout << "You have bought " << powerb4 << " amount of 4 star powerb." << endl;
-		}
-		if (powerb5 >= 1) {
 
-			cout << "You have bought " << powerb5 << " amount of 5 star powerb." << endl;
-		}
-		if (ac >= 1) {
-
-			cout << "You have bought " << ac << " amount of 1 star air conditioner." << endl;
-
-		}
-		if (ac2 >= 1) {
-
-			cout << "You have bought " << ac2 << " amount of 2 star air conditioner." << endl;
-		}
-		if (ac3 >= 1) {
-
-			cout << "You have bought " << ac3 << " amount of 3 star air conditioner." << endl;
-		}
-		if (ac4 >= 1) {
-
-			cout << "You have bought " << ac4 << " amount of 4 star air conditioner." << endl;
-		}
-		if (ac5 >= 1) {
-
-			cout << "You have bought " << ac5 << " amount of 5 star air conditioner." << endl;
 		}
 
+		cout << "Anymore Orders?(Y/N) :";
+		cin >> customer;
+		cout << " " << endl;
+	} while (customer == 'y' || customer == 'Y');
 
-	
+
+	cout << "order complete." << endl;
+
+	if (laptop >= 1) {
+
+		cout << "You have bought " << laptop << " amount of 1 star laptop." << endl;
+
+	}
+	if (laptop2 >= 1) {
+
+		cout << "You have bought " << laptop2 << " amount of 2 star laptop." << endl;
+	}
+	if (laptop3 >= 1) {
+
+		cout << "You have bought " << laptop3 << " amount of 3 star laptop." << endl;
+	}
+	if (laptop4 >= 1) {
+
+		cout << "You have bought " << laptop4 << " amount of 4 star laptop." << endl;
+	}
+	if (laptop5 >= 1) {
+
+		cout << "You have bought " << laptop5 << " amount of 5 star laptop." << endl;
+	}
+	if (phone >= 1) {
+
+		cout << "You have bought " << phone << " amount of 1 star phone." << endl;
+
+	}
+	if (phone2 >= 1) {
+
+		cout << "You have bought " << phone2 << " amount of 2 star phone." << endl;
+	}
+	if (phone3 >= 1) {
+
+		cout << "You have bought " << phone3 << " amount of 3 star phone." << endl;
+	}
+	if (phone4 >= 1) {
+
+		cout << "You have bought " << phone4 << " amount of 4 star phone." << endl;
+	}
+	if (phone5 >= 1) {
+
+		cout << "You have bought " << phone5 << " amount of 5 star phone." << endl;
+	}
+
+	if (ipad >= 1) {
+
+		cout << "You have bought " << ipad << " amount of 1 star ipad." << endl;
+
+	}
+	if (ipad2 >= 1) {
+
+		cout << "You have bought " << ipad2 << " amount of 2 star ipad." << endl;
+	}
+	if (ipad3 >= 1) {
+
+		cout << "You have bought " << ipad3 << " amount of 3 star ipad." << endl;
+	}
+	if (ipad4 >= 1) {
+
+		cout << "You have bought " << ipad4 << " amount of 4 star ipad." << endl;
+	}
+	if (ipad5 >= 1) {
+
+		cout << "You have bought " << ipad5 << " amount of 5 star ipad." << endl;
+	}
+
+	if (tablet >= 1) {
+
+		cout << "You have bought " << tablet << " amount of 1 star tablet." << endl;
+
+	}
+	if (tablet2 >= 1) {
+
+		cout << "You have bought " << tablet2 << " amount of 2 star tablet." << endl;
+	}
+	if (tablet3 >= 1) {
+
+		cout << "You have bought " << tablet3 << " amount of 3 star tablet." << endl;
+	}
+	if (tablet4 >= 1) {
+
+		cout << "You have bought " << tablet4 << " amount of 4 star tablet." << endl;
+	}
+	if (tablet5 >= 1) {
+
+		cout << "You have bought " << tablet5 << " amount of 5 star tablet." << endl;
+	}
+	if (powerb >= 1) {
+
+		cout << "You have bought " << powerb << " amount of 1 star powerb." << endl;
+
+	}
+	if (powerb2 >= 1) {
+
+		cout << "You have bought " << powerb2 << " amount of 2 star powerb." << endl;
+	}
+	if (powerb3 >= 1) {
+
+		cout << "You have bought " << powerb3 << " amount of 3 star powerb." << endl;
+	}
+	if (powerb4 >= 1) {
+		cout << "You have bought " << powerb4 << " amount of 4 star powerb." << endl;
+	}
+	if (powerb5 >= 1) {
+
+		cout << "You have bought " << powerb5 << " amount of 5 star powerb." << endl;
+	}
+	if (ac >= 1) {
+
+		cout << "You have bought " << ac << " amount of 1 star air conditioner." << endl;
+
+	}
+	if (ac2 >= 1) {
+
+		cout << "You have bought " << ac2 << " amount of 2 star air conditioner." << endl;
+	}
+	if (ac3 >= 1) {
+
+		cout << "You have bought " << ac3 << " amount of 3 star air conditioner." << endl;
+	}
+	if (ac4 >= 1) {
+
+		cout << "You have bought " << ac4 << " amount of 4 star air conditioner." << endl;
+	}
+	if (ac5 >= 1) {
+
+		cout << "You have bought " << ac5 << " amount of 5 star air conditioner." << endl;
+	}
+
+
+
 
 
 
