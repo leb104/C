@@ -1,1 +1,77 @@
+#include <iostream>
+#include<iomanip>
+#include<string>
+using namespace std;
 
+int main()
+{
+    char payMethod;
+    double total;
+
+
+    int inv_no;
+    double payAmt;
+    string date;
+    cout << "Enter invoice number: ";
+    cin >> inv_no;
+    cout << "Enter date: ";
+    cin >> date;
+    cout << "Enter the amount customer pay: ";
+    cin >> payAmt;
+    cout << endl << endl;
+
+    cout << setw(50) << " ________.__   __.  ________    \n";
+    cout << setw(50) << "|   ____||  \\ |  | |   ____|   \n";
+    cout << setw(50) << "|  |__   |   \\|  | |  |__      \n";
+    cout << setw(50) << "|   __|  |  . `  | |   __|     \n";
+    cout << setw(50) << "|  |____ |  |\\   | |  |____    \n";
+    cout << setw(50) << "|_______||__| \\__| |_______|   \n";
+    cout << setw(50) << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n\n";
+    cout << setw(60) << "86,Jalan Malinja 2,Taman Bunga Raya,53000,Kuala Lumpur\n";
+    cout << setw(40) << "Tel: 06-23571113\n\n";
+
+    cout << "Invoice No:" << left << setw(25) << inv_no << setw(32) << right << date << endl;
+    cout << "--------------------------------------------------------------------\n";
+
+    cout << "1." << left << setw(25) << inv_no << setw(41) << right << "RM999.99" << endl;
+    cout << "2." << left << setw(25) << inv_no << setw(41) << right << "RM999.99" << endl;
+    cout << "3." << left << setw(25) << inv_no << setw(41) << right << "RM999.99" << endl;
+
+    cout << setw(68) << right << "--------------" << endl;
+
+    cout << setw(25) << left << "Subtotal" << setw(44) << right << "RM999.99\n";
+    cout << setw(25) << left << "Service Charge(5%)" << setw(44) << right << "RM999.99\n";
+    cout << setw(25) << left << "Tax(6%)" << setw(44) << right << "RM999.99\n";
+    cout << setw(25) << left << "Discount" << setw(44) << right << "-RM999.99\n";
+
+    cout << setw(68) << right << "--------------" << endl;
+
+    cout << "Total Items: " << "3" << endl;
+    cout << setw(25) << left << "Total payable: " << setw(44) << right << "RM999.99\n";
+    cout << "--------------------------------------------------------------------\n";
+
+    if (payMethod == 'W' || payMethod == 'w')
+        cout << left << setw(20) << "Payment method" << ": " << "e-Wallet" << endl;
+    else if (payMethod == 'R' || payMethod == 'r')
+        cout << left << setw(20) << "Payment method" << ": " << "Credit card" << endl;
+    else if (payMethod == 'D' || payMethod == 'd')
+        cout << left << setw(20) << "Payment method" << ": " << "Debit card" << endl;
+    else if (payMethod == 'C' || payMethod == 'c')
+        cout << left << setw(20) << "Payment method" << ": " << "Cash" << endl;
+
+
+    cout << left << setw(20) << "Payment amount" << ": RM" << payAmt << endl;
+
+    double change;
+    change = payAmt - total;
+    cout << left << setw(20) << "Change" << ": RM" << change << endl;
+
+    cout << "--------------------------------------------------------------------\n";
+    cout << right << setw(60) << "  _____ _  _   _   _  _ _  __ __   _____  _   _   _ \n";
+    cout << right << setw(60) << " |_   _| || | /_\\ | \\| | |/ / \\ \\ / / _ \\| | | | | |\n";
+    cout << right << setw(60) << "   | | | __ |/ _ \\| .` | ' <   \\ V | (_) | |_| | |_|\n";
+    cout << right << setw(60) << "   |_| |_||_/_/ \\_|_|\\_|_|\\_\\   |_| \\___/ \\___/  (_)\n";
+
+
+    return 0;
+}
