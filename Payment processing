@@ -1,1 +1,87 @@
+#include"iostream"
+#include"iomanip"
+#include"string"
 
+using namespace std;
+
+int main() {
+    double total;
+    cout << "Total: ";
+    cin >> total;
+
+    char payMethod;
+    cout << "Please choose your payment method( W=e-wallet , R=Credit card , D=Debit card , C=Cash): ";
+    cin >> payMethod;
+    cout << endl;
+
+    if (payMethod == 'W' || payMethod == 'w') {
+        cout << "Your total payment is RM " << total << endl << endl;
+        cout << "Please scan the qr code below to make the payment. " << endl << endl;
+        cout << "##############      ##  ##    ##########    ##############" << endl;
+        cout << "##          ##  ####    ####  ##    ##  ##  ##          ##" << endl;
+        cout << "##  ######  ##  ##    ####  ########  ##    ##  ######  ##" << endl;
+        cout << "##  ######  ##    ##  ####    ##    ####    ##  ######  ##" << endl;
+        cout << "##  ######  ##  ####    ######  ######      ##  ######  ##" << endl;
+        cout << "##          ##  ##  ##  ####  ####  ######  ##          ##" << endl;
+        cout << "##############  ##  ##  ##  ##  ##  ##  ##  ##############" << endl;
+        cout << "                ##  ##  ##  ####  ########" << endl;
+        cout << "####  ##    ####  ####      ##  ##  ####    ######  ####" << endl;
+        cout << "  ##  ######      ####    ##              ####    ##    ##" << endl;
+        cout << "######  ######  ##          ##  ####  ########    ######" << endl;
+        cout << "####  ##          ##      ####  ##  ##    ##  ####  ####" << endl;
+        cout << "####      ####      ####  ####  ####  ########    ##  ####" << endl;
+        cout << "  ##      ##  ##    ##      ##        ######  ##" << endl;
+        cout << "      ##  ########  ########      ####  ##        ########" << endl;
+        cout << "        ####    ####  ##  ##############          ##  ##" << endl;
+        cout << "    ##  ##  ####        ##    ##  ##    ####  ##      ##" << endl;
+        cout << " ##  ##  ##  ##      ##    ##    ##      ######  ##    ##" << endl;
+        cout << "##          ##  ##  ##  ##        ##    ####  ##      ####" << endl;
+        cout << "      ######    ####        ##  ####    ####          ####" << endl;
+        cout << "##  ##    ####        ########      ##  ##########  ##" << endl;
+        cout << "                ####    ####    ##    ####      ##  ######" << endl;
+        cout << "##############  ##  ##  ####    ####    ##  ##  ##    ##" << endl;
+        cout << "##          ##    ######  ##  ##    ##  ##      ##########" << endl;
+        cout << "##  ######  ##      ##  ####  ######    ##########    ##" << endl;
+        cout << "##  ######  ##  ####    ######        ##    ##  ########" << endl;
+        cout << "##  ######  ##        ##  ##      ##  ##        ######  ##" << endl;
+        cout << "##          ##  ##    ######  ######  ########  ##    ##" << endl;
+        cout << "##############  ##  ######  ##  ####    ##########     ###" << endl;
+
+    }
+    else if (payMethod == 'R' || payMethod == 'r' || payMethod == 'D' || payMethod == 'd') {
+
+        string cardName;
+        string expDate;
+        int cardNum, secureCode;
+
+        cout << "Your total payment is RM " << total << endl << endl;
+        cout << "CARD HOLDER NAME: ";
+        getline(cin, cardName);
+
+        cout << "\nCARD NUMBER(16 digit): ";
+        cin >> cardNum;
+
+        cout << "EXPIRATION DATE: ";
+        cin >> expDate;
+
+        cout << "SECURITY CODE(3 digit): ";
+        cin >> secureCode;
+
+    }
+
+
+    else if (payMethod == 'C' || payMethod == 'c') {
+
+        cout << "Your total payment is RM " << total << endl;
+
+    }
+    else {
+        cout << "You enter an invalid payment method\n";
+
+        return 0;
+    }
+
+    cout << "\nThank You!" << endl << endl;
+
+    return 0;
+}
